@@ -5,7 +5,6 @@
 }
 
 header {
-  width: auto;
   height: 50px;
   background-color: #ff9a4b;
 }
@@ -18,8 +17,10 @@ main {
 
 .topic {
   width: 300px;
-  background-color: #eeeeee;
+  margin-right: 30px;
+  padding: 10px;
   position: relative;
+  background-color: #eee;
 }
 
 .topic2 {
@@ -27,17 +28,18 @@ main {
 }
 
 .step {
-  display: inline-block;
-  color: #fff;
-  background-color: #ff9a4b;
+  padding: 3px;
   position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ff9a4b;
+  color: #fff;
 }
 
 .image {
   height: 150px;
   background-size: cover;
   background-position: bottom;
-  margin: 10px 10px 0 10px;
 }
 .image1 {
   background-image: url(img/flow01.png);
@@ -56,4 +58,20 @@ footer {
   width: auto;
   height: 50px;
   background-color: #aaaaaa;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .topic {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .topic2 {
+    margin: 20px auto;
+  }
 }
